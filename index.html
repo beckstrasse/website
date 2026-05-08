@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beckstraße</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      background: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 85vh;
+      object-fit: contain;
+      display: block;
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      opacity: 0.5;
+      letter-spacing: 0.04em;
+    }
+
+    footer a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <img src="street.jpg" alt="Beckstraße">
+  <footer>
+    <a href="mailto:info@beckstrasse.de">info@beckstrasse.de</a>
+  </footer>
+</body>
+</html>
