@@ -50,12 +50,52 @@
       opacity: 0.8;
       text-decoration: underline;
     }
+
+    .docs {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .docs a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35em;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 4px;
+      padding: 0.3em 0.75em;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      opacity: 0.55;
+      transition: opacity 0.15s;
+    }
+
+    .docs a:hover {
+      opacity: 0.9;
+      text-decoration: none;
+    }
+
+    .docs .hint {
+      display: block;
+      font-size: 0.72rem;
+      opacity: 0.4;
+      margin-top: 0.4rem;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
   </style>
 </head>
 <body>
   <img src="street.jpg" alt="Beckstraße">
   <footer>
     <a href="mailto:info@beckstrasse.de">info@beckstrasse.de</a>
+    <div class="docs">
+      <a href="satzung.pdf" target="_blank" rel="noopener">&#128196; Satzung</a>
+      <a href="mitgliedsantrag.pdf" download>&#128196; Mitgliedsantrag</a>
+    </div>
+    <span class="hint">Ausgefüllten Mitgliedsantrag bitte an <a href="mailto:info@beckstrasse.de">info@beckstrasse.de</a> senden.</span>
   </footer>
 </body>
 </html>
